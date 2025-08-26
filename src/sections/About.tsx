@@ -19,11 +19,11 @@ const About = () => {
           consequatur, at recusandae fuga magni delectus provident iste vero
           quis repellendus sit.
         </p>
-        <button onClick={handleClick}>Saiba Mais</button>
+        <button className={styles.BtnOpenInfo} onClick={handleClick}>Saiba Mais</button>
       </div>
       {showInfo && (
         <div className={styles.BackBlack}>
-            <button onClick={handleClick}>
+            <button className={styles.BtnClouseInfo} onClick={handleClick}>
               <span className={styles.ClouseInfoX}></span>
             </button>
           <div className={styles.AboutInformation}>

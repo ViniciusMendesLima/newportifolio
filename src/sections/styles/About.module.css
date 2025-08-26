@@ -12,11 +12,7 @@
   gap: 1rem;
 }
 
-.AboutResum h2 {
-  font-size: 2rem;
-}
-
-.AboutResum button {
+.BtnOpenInfo {
   width: 5.5rem;
   padding: 10px 5px;
   border-radius: 10px;
@@ -29,7 +25,7 @@
   font-weight: 300;
   line-height: 1.5rem;
 }
-.SectionAbout button:hover {
+.BtnOpenInfo:hover {
   opacity: 0.9;
   font-weight: 600;
 }
@@ -52,21 +48,30 @@
   background-color: var(--color-surface);
   width: 100%;
   height: 80vh;
-  padding: 10px;
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
+  border-radius: 10px;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #6b57cc rgba(0, 0, 0, 0.1);
 }
 
-.BackBlack button {
+.BtnClouseInfo {
   cursor: pointer;
   background-color: transparent;
   border: none;
   width: 40px;
-  height: 60px;
+  height: 40px;
   align-self: flex-end;
+  z-index: 1;
+  transition: .2s;
+  border-radius: 5px;
+}
+
+.BtnClouseInfo:hover{
+    background-color: var(--color-accent);
+    border-radius: 20px;
 }
 
 .ClouseInfoX {
@@ -75,7 +80,7 @@
   display: block;
   width: 30px;
   height: 2px;
-  left: 15px;
+  left: 5px;
   transform: rotate(45deg);
 }
 
@@ -87,4 +92,19 @@
   height: 100%;
   position: relative;
   transform: rotate(90deg);
+}
+
+@media (max-width:1100px){
+    .BackBlack {
+  padding: 0 6rem;}
+}
+
+@media (max-width:800px){
+    .BackBlack {
+  padding: 0 4rem;}
+}
+
+@media (max-width:600px){
+    .BackBlack {
+  padding: 0 2rem;}
 }

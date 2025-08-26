@@ -1,7 +1,7 @@
 import './reset.css'
-import './App.css'
 import { Header } from './sections/Header'
 import { About } from './sections/About'
+import { Projects } from './sections/Projects'
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
     <>
     <Header/>
     <About/>
+    <Projects/>
 
     </>
   )
