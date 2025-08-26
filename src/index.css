@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  --color-background: #FFFFFF;   /* fundo principal */
+  --color-primary: #0A0F1C;      /* cor principal (títulos, botões, ícones) */
+  --color-surface: #F5F5F5;      /* superfícies e destaques sutis */
+  --color-dark: #000000;         /* detalhes escuros */
+  --color-accent: #E1BFA5;       /* cor de apoio (tons de pele/avatar) */
+}
+
+html{
+  color: var(--color-primary);
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-primary);
+  padding: 2rem;
+}
+
+button {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+li, a{
+  list-style: none;
+  text-decoration: none;
+  color: var(---text-color);
+}  
+
+.card {
+  background: var(--color-surface);
+}
