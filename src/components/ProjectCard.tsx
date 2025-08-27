@@ -4,7 +4,7 @@ interface ProjectType {
   name: string;
   description: string;
   link: string;
-  imageUrl?: string | null;
+  imageUrl: string | null;
 }
 
 type ProjectCardProps = {

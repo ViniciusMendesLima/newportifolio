@@ -9,7 +9,7 @@ const About = () => {
     setshowInfo((prev) => !prev);
   };
   return (
-    <section className={styles.SectionAbout}>
+    <section className={`${styles.SectionAbout} Container`} >
       <img src={foto} alt="Foto" />
       <div className={styles.AboutResum}>
         <h2>Sobre</h2>

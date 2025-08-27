@@ -5,7 +5,7 @@ const Projects = () => {
     return (
         <section>
             <h2>Projetos</h2>
-            <div>
+            <div className="Container">
             <ProjectCard projects={ProjectsData}/>
             </div>
         </section>

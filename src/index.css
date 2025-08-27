@@ -3,19 +3,24 @@
   --color-background: #FFFFFF;   /* fundo principal */
   --color-primary: #0A0F1C;      /* cor principal (títulos, botões, ícones) */
   --color-surface: #F5F5F5;      /* superfícies e destaques sutis */
-  --color-dark: #000000;         /* detalhes escuros */
+  --color-light-dark: #a7a4a4;         /* detalhes escuros suave */
   --color-accent: #E1BFA5;       /* cor de apoio (tons de pele/avatar) */
+  --color-warning: #f8a5a5;
 }
 
 html{
   color: var(--color-primary);
   font-family: "Inter", sans-serif;
+  background: var(--color-background);
 }
 
 body {
-  background: var(--color-background);
+
   color: var(--color-primary);
+  margin: 2rem 4rem;
   padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(228, 209, 209, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button {
@@ -29,8 +34,8 @@ li, a{
   color: var(---text-color);
 }  
 
-.card {
-  background: var(--color-surface);
+.Container {
+  padding-left: 2rem;
 }
 
 h2 {
