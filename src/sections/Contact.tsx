@@ -12,13 +12,15 @@ const Contact = () => {
     formState: { errors },
   } = useForm<ContactFormInputs>();
 
-  const handleSubmitForm: SubmitHandler<ContactFormInputs> = (data) => {
+  const handleSubmitForm: SubmitHandler<ContactFormInputs> = async (data) => {
     console.log(data);
   };
   return (
     <div className={styles.Contact}>
       <h2>Contato</h2>
-      <form className="Container" onSubmit={handleSubmit(handleSubmitForm)}>
+      <form
+        onSubmit={handleSubmit(handleSubmitForm)}
+      >
         <div className={styles.FormFieldInput}>
           <div>
             <input

@@ -8,35 +8,35 @@ const images = import.meta.glob(
 
 const projectsMeta = [
   {
-    file: "teste",
+    file: "fotomodel",
     name: "Projeto",
     link: "https://viniciusmlima.site/",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, reiciendis velit veniam molestias voluptas porro assumenda expedita, aperiam, earum nostrum consectetur itaque quia aliquid. Soluta, quam tempora. Veritatis, corrupti commodi?",
   },
   {
-    file: "teste",
+    file: "fotomodel",
     name: "Projeto",
     link: "https://viniciusmlima.site/",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, reiciendis velit veniam molestias voluptas porro assumenda expedita, aperiam, earum nostrum consectetur itaque quia aliquid. Soluta, quam tempora. Veritatis, corrupti commodi?",
   },
   {
-    file: "teste",
+    file: "fotomodelo",
     name: "Projeto",
     link: "https://viniciusmlima.site/",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, reiciendis velit veniam molestias voluptas porro assumenda expedita, aperiam, earum nostrum consectetur itaque quia aliquid. Soluta, quam tempora. Veritatis, corrupti commodi?",
   },
   {
-    file: "teste",
+    file: "fotomodelo",
     name: "Projeto",
     link: "https://viniciusmlima.site/",
     description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, reiciendis velit veniam molestias voluptas porro assumenda expedita, aperiam, earum nostrum consectetur itaque quia aliquid. Soluta, quam tempora. Veritatis, corrupti commodi?",
   },
   {
-    file: "teste",
+    file: "fotomodelo",
     name: "Projeto",
     link: "https://viniciusmlima.site/",
     description:
