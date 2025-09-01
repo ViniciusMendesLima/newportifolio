@@ -1,5 +1,6 @@
+import axios from "axios";
 import styles from "./styles/Contact.module.css";
-import { useForm } from "react-hook-form";
+import { useForm, type SubmitHandler } from "react-hook-form";
 const Contact = () => {
   type ContactFormInputs = {
     name: string;
@@ -8,15 +9,35 @@ const Contact = () => {
   };
   const {
     register,
+    handleSubmit,
     formState: { errors },
+    reset
   } = useForm<ContactFormInputs>();
 
-  
+const onSubmit: SubmitHandler<ContactFormInputs> = async (data) => {
+    try {
+      const response = await axios.post(
+        "https://formsubmit.co/ajax/seu-email",
+        data,
+        {
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        }
+      );
+      console.log("Mensagem enviada com sucesso!", response.data);
+      alert("Mensagem enviada com sucesso!");
+      reset();
+    } catch (error) {
+      console.error("Erro ao enviar a mensagem:", error);
+      alert("Erro ao enviar a mensagem. Tente novamente.");
+    }
+  };
+ 
   return (
     <section id="Contact" className={styles.Contact}>
       <h2>Contato</h2>
-      <form className="Container" action="https://formsubmit.co/email-aqui
-" method="POST">
+      <form className="Container" onSubmit={handleSubmit(onSubmit)}>
         <div className={styles.FormFieldInput}>
           <div>
             <input
@@ -37,6 +58,10 @@ const Contact = () => {
               placeholder="Seu e-mail"
               {...register("mail", {
                 required: "Campo obrigatório",
+                pattern: {
+                  value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                  message: "E-mail inválido",
+                },
               })}
             />
             {errors.mail && <p>{errors.mail.message as string}</p>}

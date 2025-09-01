@@ -1,13 +1,27 @@
 import styles from "./styles/About.module.css";
 import foto from "../assets/fotomodelo.png";
 import { AboutInformation } from "../components/AboutInformation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const About = () => {
   const [showInfo, setshowInfo] = useState(false);
 
   const handleClick = () => {
     setshowInfo((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (showInfo) {
+      document.body.style.overflow = "hidden"; // bloqueia rolagem
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      document.body.style.overflow = "auto"; // libera rolagem
+    }
+
+    // Limpeza ao desmontar (por precaução)
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [showInfo]);
   return (
     <section id="About" className={`${styles.SectionAbout} Container`} >
       <img src={foto} alt="Foto" />
