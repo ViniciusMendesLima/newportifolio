@@ -1,5 +1,5 @@
 import styles from "./styles/Contact.module.css";
-import { useForm, type SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
 const Contact = () => {
   type ContactFormInputs = {
     name: string;
@@ -8,19 +8,15 @@ const Contact = () => {
   };
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm<ContactFormInputs>();
 
-  const handleSubmitForm: SubmitHandler<ContactFormInputs> = async (data) => {
-    console.log(data);
-  };
+  
   return (
     <section id="Contact" className={styles.Contact}>
       <h2>Contato</h2>
-      <form className="Container"
-        onSubmit={handleSubmit(handleSubmitForm)}
-      >
+      <form className="Container" action="https://formsubmit.co/email-aqui
+" method="POST">
         <div className={styles.FormFieldInput}>
           <div>
             <input
@@ -57,9 +53,7 @@ const Contact = () => {
           {errors.message && <p>{errors.message.message as string}</p>}
         </div>
 
-        <button type="submit">
-          Enviar mensagem
-        </button>
+        <button type="submit">Enviar mensagem</button>
       </form>
     </section>
   );
