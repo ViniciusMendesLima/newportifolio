@@ -2,11 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 1.5rem 0 1.5rem 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .Skill{
     text-align: center;
+
 }
 
 .Skill i{

@@ -1,9 +1,9 @@
 import Styles from "./styles/Skills.module.css";
 const Skills = () => {
   return (
-    <section>
+    <section id="Skills">
       <h2>Habilidades</h2>
-      <div className={Styles.Container}>
+      <div className={`${Styles.Container} Container`}>
         <div className={Styles.Skill}>
           <div>
             <i className="devicon-html5-plain"></i>

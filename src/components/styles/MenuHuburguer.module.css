@@ -73,13 +73,14 @@ nav label {
   text-decoration: underline;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .Menu {
     display: block;
   }
 
   .Navbar input:checked ~ .Links {
     display: block;
+    background-color: rgba(167, 164, 164, .9);
   }
 
   .Navbar {

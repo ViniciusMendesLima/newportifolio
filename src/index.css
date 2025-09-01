@@ -12,10 +12,10 @@ html{
   color: var(--color-primary);
   font-family: "Inter", sans-serif;
   background: var(--color-background);
+  scroll-behavior: smooth;
 }
 
 body {
-
   color: var(--color-primary);
   margin: 2rem 4rem;
   padding: 2rem;
@@ -40,4 +40,12 @@ li, a{
 
 h2 {
   font-size: 2rem;
+}
+@media (max-width:531px){
+  body{
+    margin: 2rem 1rem;
+  }
+  .Container{
+    padding-left: 0;
+  }
 }

@@ -4,7 +4,6 @@
   max-width: 35rem;
   gap: 20px;
   margin-top: 1rem;
-      padding-left: 2rem;
 }
 
 .Contact form div {
@@ -46,4 +45,17 @@
     font-size: 10px;
     color: var(--color-warning);
     padding-left: 10px;
+}
+
+@media (max-width:531px){
+    .Contact form div{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:531px){
+    .Contact button{
+        width: 100%;
+    }
 }

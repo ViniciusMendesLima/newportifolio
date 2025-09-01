@@ -16,9 +16,9 @@ const Contact = () => {
     console.log(data);
   };
   return (
-    <section className={styles.Contact}>
+    <section id="Contact" className={styles.Contact}>
       <h2>Contato</h2>
-      <form
+      <form className="Container"
         onSubmit={handleSubmit(handleSubmitForm)}
       >
         <div className={styles.FormFieldInput}>
@@ -57,7 +57,7 @@ const Contact = () => {
           {errors.message && <p>{errors.message.message as string}</p>}
         </div>
 
-        <button type="submit" className="enviar">
+        <button type="submit">
           Enviar mensagem
         </button>
       </form>

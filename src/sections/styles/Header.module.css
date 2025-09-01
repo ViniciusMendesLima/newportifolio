@@ -11,3 +11,13 @@
     font-size: 1.5rem;
     font-weight: 300;
 }
+
+@media(max-width:531px) {
+    .Header h1{
+        font-size: 2rem;
+    }
+
+    .Header p {
+    font-size: 1rem;
+}
+}

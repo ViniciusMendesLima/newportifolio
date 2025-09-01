@@ -104,6 +104,10 @@
   padding: 0 4rem;}
 }
 
+@media (max-width:650px){
+    .SectionAbout {
+  flex-direction: column;}
+}
 @media (max-width:600px){
     .BackBlack {
   padding: 0 2rem;}
