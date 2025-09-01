@@ -3,6 +3,7 @@ import { Header } from './sections/Header'
 import { About } from './sections/About'
 import { Projects } from './sections/Projects'
 import { Contact } from './sections/Contact'
+import { Skills } from './sections/Skills'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
     <Header/>
     <About/>
+    <Skills/>
     <Projects/>
     <Contact/>
 

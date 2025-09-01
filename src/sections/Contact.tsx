@@ -16,7 +16,7 @@ const Contact = () => {
     console.log(data);
   };
   return (
-    <div className={styles.Contact}>
+    <section className={styles.Contact}>
       <h2>Contato</h2>
       <form
         onSubmit={handleSubmit(handleSubmitForm)}
@@ -61,7 +61,7 @@ const Contact = () => {
           Enviar mensagem
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 export { Contact };
